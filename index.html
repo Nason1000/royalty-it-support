@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Royalty IT Support</title>
+<meta name="description" content="Royalty IT Support: computer repair, networks, security and remote support.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d1830;--bg2:#13223f;--ink:#f4efe1;--mute:#b6bfd3;--gold:#d4aa4f;--line:#2b3c61;--lt:#f4efe1;--ltink:#0d1830;--ltmute:#4a5774;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--lt:#101c36;--ltink:#f4efe1;--ltmute:#b6bfd3}}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.1;margin:0}
+a{color:inherit}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:19px;text-decoration:none}
+.logo b{color:var(--gold)}
+nav{display:flex;gap:18px;align-items:center}
+nav a{text-decoration:none;color:var(--mute);font-size:15px}
+nav a:hover{color:var(--ink)}
+@media(max-width:700px){nav a.l{display:none}}
+button,.btn{font:600 16px Figtree,sans-serif;border-radius:6px;border:1.5px solid var(--gold);padding:12px 20px;cursor:pointer;text-decoration:none;display:inline-block;background:transparent;color:var(--ink)}
+.btn.g{background:var(--gold);color:#0d1830}
+button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+#lang{padding:6px 12px;font-size:14px}
+.hero{padding:72px 0 64px}
+.hero h1{font-size:clamp(40px,8vw,76px);font-weight:800;max-width:14ch}
+.hero p{color:var(--mute);max-width:46ch;font-size:19px;margin:20px 0 28px}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.sla{margin-top:44px;display:inline-flex;gap:14px;align-items:center;border:1px solid var(--line);border-left:4px solid var(--gold);padding:14px 18px;background:var(--bg2);border-radius:4px}
+.sla strong{font:800 30px Fraunces,Georgia,serif;color:var(--gold)}
+.sla span{color:var(--mute);font-size:15px;max-width:26ch;line-height:1.35}
+section{padding:64px 0}
+section h2{font-size:clamp(30px,5vw,44px);margin-bottom:28px}
+.lt{background:var(--lt);color:var(--ltink)}
+.lt .m{color:var(--ltmute)}
+.grid{display:grid;gap:0;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));border-top:1px solid var(--line)}
+.lt .grid{border-color:#c9bf9f55}
+.it{padding:22px 22px 22px 0;border-bottom:1px solid var(--line)}
+.lt .it{border-color:#c9bf9f55}
+.it h3{font-size:21px;margin-bottom:6px}
+.it p{margin:0;color:var(--mute);font-size:16px}
+.lt .it p{color:var(--ltmute)}
+.plans{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.plan{border:1px solid var(--line);padding:26px;border-radius:6px;background:var(--bg2)}
+.plan.f{border:2px solid var(--gold)}
+.plan h3{font-size:24px}
+.pr{font:800 34px Fraunces,Georgia,serif;color:var(--gold);margin:10px 0}
+.plan ul{padding-left:18px;margin:12px 0 0;color:var(--mute)}
+ol.st{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+ol.st li{counter-increment:s;padding-left:46px;position:relative}
+ol.st li::before{content:counter(s);position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;background:var(--gold);color:#0d1830;font:800 18px Fraunces,serif;display:grid;place-items:center}
+ol.st b{display:block;font:700 20px Fraunces,serif}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{cursor:pointer;font-weight:600;font-size:18px}
+details p{margin:10px 0 0;color:var(--mute)}
+form{display:grid;gap:14px;max-width:560px}
+label{font-size:15px;color:var(--mute);display:grid;gap:6px}
+input,select,textarea{font:16px Figtree,sans-serif;padding:12px;border-radius:6px;border:1px solid var(--line);background:var(--bg2);color:var(--ink);width:100%}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mute);font-size:15px}
+footer .w{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#06361a;font-weight:700;padding:13px 18px;border-radius:999px;text-decoration:none;box-shadow:0 4px 14px #0006;z-index:6}
+</style>
+</head>
+<body>
+<header><div class="w">
+<a class="logo" href="#top">♛ Royalty <b>IT Support</b></a>
+<nav><a class="l" href="#sevis" data-i="n1"></a><a class="l" href="#pri" data-i="n2"></a><a class="l" href="#kontak" data-i="n3"></a><button id="lang" type="button" aria-label="Language">EN</button></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="w">
+<h1 data-i="h1"></h1>
+<p data-i="sub"></p>
+<div class="row"><a class="btn g" href="#kontak" data-i="cta1"></a><a class="btn" href="https://wa.me/14132639604" data-i="cta2"></a></div>
+<div class="sla"><strong data-i="sla1"></strong><span data-i="sla2"></span></div>
+</div></div>
+
+<section class="lt" id="sevis"><div class="w">
+<h2 data-i="s_t"></h2>
+<div class="grid">
+<div class="it"><h3 data-i="a1"></h3><p class="m" data-i="a1d"></p></div>
+<div class="it"><h3 data-i="a2"></h3><p class="m" data-i="a2d"></p></div>
+<div class="it"><h3 data-i="a3"></h3><p class="m" data-i="a3d"></p></div>
+<div class="it"><h3 data-i="a4"></h3><p class="m" data-i="a4d"></p></div>
+<div class="it"><h3 data-i="a5"></h3><p class="m" data-i="a5d"></p></div>
+<div class="it"><h3 data-i="a6"></h3><p class="m" data-i="a6d"></p></div>
+</div></div></section>
+
+<section id="design"><div class="w">
+<h2 data-i="d_t"></h2>
+<div class="grid">
+<div class="it"><h3 data-i="e1"></h3><p data-i="e1d"></p></div>
+<div class="it"><h3 data-i="e2"></h3><p data-i="e2d"></p></div>
+<div class="it"><h3 data-i="e3"></h3><p data-i="e3d"></p></div>
+</div>
+<p style="color:var(--mute);margin-top:16px;font-size:15px" data-i="dnote"></p>
+</div></section>
+
+<section id="pri"><div class="w">
+<h2 data-i="p_t"></h2>
+<div class="plans">
+<div class="plan"><h3 data-i="p1"></h3><div class="pr">$50/hr</div><div data-i="p1d"></div></div>
+<div class="plan"><h3 data-i="p2"></h3><div class="pr">$75</div><div data-i="p2d"></div></div>
+<div class="plan"><h3 data-i="p3"></h3><div class="pr">$75–$100</div><div data-i="p3d"></div></div>
+<div class="plan"><h3 data-i="p4"></h3><div class="pr">$100</div><div data-i="p4d"></div></div>
+<div class="plan"><h3 data-i="p5"></h3><div class="pr">$50</div><div data-i="p5d"></div></div>
+<div class="plan"><h3 data-i="p6"></h3><div class="pr">$40</div><div data-i="p6d"></div></div>
+<div class="plan"><h3 data-i="p7"></h3><div class="pr">$100</div><div data-i="p7d"></div></div>
+</div>
+<p style="color:var(--mute);margin-top:16px;font-size:15px" data-i="pnote"></p>
+</div></section>
+
+<section class="lt"><div class="w">
+<h2 data-i="h_t"></h2>
+<ol class="st">
+<li><b data-i="h1t"></b><span class="m" data-i="h1d"></span></li>
+<li><b data-i="h2t"></b><span class="m" data-i="h2d"></span></li>
+<li><b data-i="h3t"></b><span class="m" data-i="h3d"></span></li>
+</ol></div></section>
+
+<section><div class="w" style="max-width:760px">
+<h2 data-i="f_t"></h2>
+<details><summary data-i="q1"></summary><p data-i="r1"></p></details>
+<details><summary data-i="q2"></summary><p data-i="r2"></p></details>
+<details><summary data-i="q3"></summary><p data-i="r3"></p></details>
+<details><summary data-i="q4"></summary><p data-i="r4"></p></details>
+</div></section>
+
+<section class="lt" id="kontak"><div class="w">
+<h2 data-i="c_t"></h2>
+<form id="f">
+<label><span data-i="fn"></span><input name="n" required autocomplete="name"></label>
+<label><span data-i="fp"></span><input name="p" required type="tel" autocomplete="tel"></label>
+<label><span data-i="fs"></span><select name="s" id="sel"></select></label>
+<label><span data-i="fm"></span><textarea name="m" rows="4"></textarea></label>
+<div class="row"><button class="g btn" type="submit" data-i="send"></button><a class="btn" href="tel:+14132639604" data-i="call" style="color:var(--ltink)"></a></div>
+</form>
+<p class="m" style="margin-top:18px" data-i="addr"></p>
+</div></section>
+</main>
+
+<footer><div class="w"><span>© <span id="y"></span> Royalty IT Support</span><span data-i="foot"></span></div></footer>
+<a class="wa" href="https://wa.me/14132639604" aria-label="WhatsApp">WhatsApp</a>
+
+<script>
+var D={ht:{n1:"Sèvis",n2:"Pri",n3:"Kontak",h1:"Sipò IT ou ka fè konfyans.",sub:"Òdinatè ou pa mache, Wi-Fi a tonbe, oswa biznis ou bezwen sekirite? Nou rezoud li vit, sou plas oswa a distans.",cta1:"Mande yon sèvis",cta2:"Ekri nou sou WhatsApp",sla1:"Gratis",sla2:"Kotasyon gratis — ou apwouve pri a anvan nou kòmanse.",
+s_t:"Sa nou ka fè pou ou",a1:"Reparasyon òdinatè",a1d:"Laptop ak desktop: ekran, kleyavye, batri, ralanti, pa limen.",a2:"Retire viris",a2d:"Nou netwaye malware, nou sekirize machin ou epi nou ba w konsèy.",a3:"Rezo ak Wi-Fi",a3d:"Enstalasyon ak amelyorasyon rezo pou kay, biwo ak boutik.",a4:"Enstale lojisyèl",a4d:"Windows, Office, antivirus ak pwogram biznis ou yo.",a5:"Backup ak rekiperasyon done",a5d:"Nou sove dosye ou yo epi nou eseye rekipere sa ki pèdi.",a6:"Enstalasyon enprimant",a6d:"Enprimant ak skanè: enstalasyon, koneksyon Wi-Fi, pwoblèm enpresyon.",
+p_t:"Pri",p1:"Reparasyon òdinatè",p1d:"Minimòm 1 èdtan",p2:"Enstalasyon nouvo òdinatè + transfè done",p2d:"Pri fiks",p3:"Wi-Fi / rezo lakay",p3d:"Depann de travay la",p4:"Retire viris / malware",p4d:"Pri fiks",p5:"Enstalasyon enprimant / skanè",p5d:"Pri fiks",p6:"Enstalasyon telefòn / tablèt",p6d:"Pri fiks",p7:"Microsoft 365 / imèl biznis",p7d:"Pri fiks",pnote:"Kotasyon gratis — ou apwouve pri a anvan nou kòmanse. Ijan menm jou: +$25.",d_t:"Design",e1:"Flyers",e1d:"Flyers pou biznis ou, evènman ou, legliz ou.",e2:"Kat vizit",e2d:"Kat vizit pwofesyonèl ak logo ou.",e3:"Kat envitasyon",e3d:"Kat envitasyon pou maryaj, batèm, anivèsè ak lòt evènman.",dnote:"Pri sou demann — rele nou pou yon kotasyon.",
+h_t:"Ki jan sa mache",h1t:"Ou kontakte nou",h1d:"Rele nou, ekri sou WhatsApp, oswa ranpli fòm nan.",h2t:"Nou fè dyagnostik",h2d:"Nou di w ki pwoblèm lan ye ak konbyen sa koute, anvan nou kòmanse.",h3t:"Nou rezoud li",h3d:"Sou plas oswa a distans. Ou peye apre travay la fini.",
+f_t:"Kesyon moun poze",q1:"Èske nou vini lakay mwen?",r1:"Wi, nou fè vizit sou plas nan zòn nou kouvri. Nou fè tou sipò a distans.",q2:"Konbyen tan reparasyon an pran?",r2:"Pifò pwoblèm rezoud nan menm jou a. Si nou bezwen yon pyès, nou di w konbyen tan l ap pran.",q3:"Èske done m yo an sekirite?",r3:"Nou pa efase anyen san pèmisyon w, epi nou fè yon backup anvan nou travay sou machin ou.",q4:"Ki mwayen peman nou aksepte?",r4:"Lajan kach, Zelle, Venmo ak Cash App. Mande nou detay yo.",
+c_t:"Mande yon sèvis",fn:"Non",fp:"Telefòn",fs:"Sèvis ou bezwen",fm:"Dekri pwoblèm lan",send:"Voye sou WhatsApp",call:"Rele nou",addr:"Zòn: Springfield, Chicopee, Agawam, West Springfield. Disponib aswè ak wikenn.",foot:"Sipò IT pou kay ak biznis.",opts:["Reparasyon òdinatè","Retire viris","Rezo ak Wi-Fi","Enstale lojisyèl","Backup done","Enstalasyon enprimant","Enstalasyon telefòn / tablèt","Microsoft 365","Design","Lòt"],wm:"Bonjou Royalty IT Support, mwen se "},
+en:{n1:"Services",n2:"Pricing",n3:"Contact",h1:"IT support you can trust.",sub:"Computer not working, Wi-Fi down, or your business needs better security? We fix it fast, on-site or remotely.",cta1:"Request service",cta2:"Message us on WhatsApp",sla1:"Free",sla2:"Free quote — you approve the price before we start.",
+s_t:"What we do for you",a1:"Computer repair",a1d:"Laptops and desktops: screens, keyboards, batteries, slowness, no power.",a2:"Virus removal",a2d:"We clean malware, secure your machine and give you practical advice.",a3:"Network and Wi-Fi",a3d:"Setup and upgrades for homes, offices and shops.",a4:"Software installation",a4d:"Windows, Office, antivirus and your business programs.",a5:"Backup and data recovery",a5d:"We save your files and try to recover what was lost.",a6:"Printer setup",a6d:"Printers and scanners: setup, Wi-Fi connection, printing problems.",
+p_t:"Pricing",p1:"Computer repair",p1d:"1 hour minimum",p2:"New computer setup + data transfer",p2d:"Flat rate",p3:"Wi-Fi / home network",p3d:"Depends on the job",p4:"Virus / malware removal",p4d:"Flat rate",p5:"Printer / scanner setup",p5d:"Flat rate",p6:"Phone / tablet setup",p6d:"Flat rate",p7:"Microsoft 365 / business email",p7d:"Flat rate",pnote:"Free quote — you approve the price before we start. Same-day urgent: +$25.",d_t:"Design",e1:"Flyers",e1d:"Flyers for your business, events, or church.",e2:"Business cards",e2d:"Professional business cards with your logo.",e3:"Invitation cards",e3d:"Invitation cards for weddings, baptisms, birthdays and other events.",dnote:"Custom quote — call us for a price.",
+h_t:"How it works",h1t:"You contact us",h1d:"Call, message on WhatsApp, or fill in the form.",h2t:"We diagnose",h2d:"We tell you the problem and the cost before we start.",h3t:"We fix it",h3d:"On-site or remotely. You pay once the work is done.",
+f_t:"Common questions",q1:"Do you come to my home?",r1:"Yes, we do on-site visits in the areas we cover. We also offer remote support.",q2:"How long does a repair take?",r2:"Most problems are solved the same day. If we need a part, we tell you how long it will take.",q3:"Is my data safe?",r3:"We never delete anything without your permission, and we back up before working on your machine.",q4:"What payment methods do you accept?",r4:"Cash, Zelle, Venmo and Cash App. Ask us for details.",
+c_t:"Request a service",fn:"Name",fp:"Phone",fs:"Service needed",fm:"Describe the problem",send:"Send on WhatsApp",call:"Call us",addr:"Area: Springfield, Chicopee, Agawam, West Springfield. Available evenings and weekends.",foot:"IT support for homes and businesses.",opts:["Computer repair","Virus removal","Network and Wi-Fi","Software installation","Data backup","Printer setup","Phone / tablet setup","Microsoft 365","Design","Other"],wm:"Hello Royalty IT Support, my name is "}};
+var L="en",sel=document.getElementById("sel");
+function t(){var d=D[L];document.documentElement.lang=L;
+document.querySelectorAll("[data-i]").forEach(function(e){e.textContent=d[e.dataset.i]});
+var v=sel.selectedIndex;sel.innerHTML="";d.opts.forEach(function(o){var p=document.createElement("option");p.textContent=o;sel.appendChild(p)});sel.selectedIndex=v<0?0:v;
+document.getElementById("lang").textContent=L=="ht"?"EN":"HT"}
+document.getElementById("lang").onclick=function(){L=L=="ht"?"en":"ht";t()};
+document.getElementById("f").onsubmit=function(e){e.preventDefault();var f=e.target,d=D[L];
+var m=d.wm+f.n.value+". "+f.s.value+". "+f.m.value+" ("+f.p.value+")";
+window.open("https://wa.me/14132639604?text="+encodeURIComponent(m),"_blank")};
+document.getElementById("y").textContent=new Date().getFullYear();
+t();
+</script>
+</body>
+</html>
